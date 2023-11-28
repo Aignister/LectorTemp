@@ -134,5 +134,15 @@ namespace LectorTemp
                 actDato = false;
             }
         }
+
+        private void btnIniciar_Click(object sender, EventArgs e)
+        {
+            serialPort1.WriteLine("Iniciar");
+        }
+
+        private void btnTerminar_Click(object sender, EventArgs e)
+        {
+            serialPort1.WriteLine("terminar");
+        }
     }
 }
